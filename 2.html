@@ -4,25 +4,105 @@
 <head>
 <title>Strategy 2</title>
 <meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146793770-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146793770-1');
+</script>
+<style>
+body{
+  margin:0;
+}
+ #active{
+  color: red;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  }
+  h1 {
+    font-size: 45px;
+    text-align:center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding: 20px;
+  }
+  #grid ol{
+    border-right: 1px solid gray;
+    width:350px;
+    margin:0;
+    padding: 20px;
+    padding-left: 33px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 420px 1fr;
+  }
+  #grid #article{
+    padding-left: 5px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    #grid ol{
+      border-right: none;
+    }
+    h1 {
+      border-bottom:none;
+    }
+  }
+
+</style>
 </head>
 
 <body>
-  <h2><a href="index.html">Investment using Deep Learning</a></h2>
-<ol>
-  <li><a href="1.html">Strategy 1-Using the large shareholders</a></li>
-  <li><a href="2.html">Strategy 2-Using the Reinforement Learning</a></li>
-  <li><a href="3.html">Who am I</a></li>
+  <h1><a href="index.html">Investment Using Deep Learning</a></h1>
+<div id="grid">
+  <ol>
+    <li><a href="1.html">Strategy 1-Using the large shareholders</a></li>
+    <li><a href="2.html">Strategy 2-Using the Reinforement Learning</a></li>
+    <li><a href="3.html">Who am I</a></li>
+  </ol>
+  <div id="article">
+    <h2>Strategy 2-Using the Reinforement Learning</h2>
+    <p style="margin-top:10px;">
+    Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.
+    Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
+    It differs from supervised learning in that labelled input/output pairs need not be presented, and sub-optimal actions need not be explicitly corrected.
+    Instead the focus is finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).[1]
+    The environment is typically formulated as a Markov decision process (MDP), as many reinforcement learning algorithms for this context utilize dynamic programming techniques.[2]
+    The main difference between the classical dynamic programming methods and reinforcement learning algorithms is that the latter do not assume knowledge of an exact mathematical model of the MDP and they target large MDPs where exact methods become infeasible.
+    </p>
+  </div>
+</div>
+<p>
+  <div id="disqus_thread"></div>
+  <script>
 
-
-</ol>
-
-<h1>Strategy 2-Using the Reinforement Learning</h1>
-<p style="margin-top:10px;">
-Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.
-Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
-It differs from supervised learning in that labelled input/output pairs need not be presented, and sub-optimal actions need not be explicitly corrected.
-Instead the focus is finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).[1]
-The environment is typically formulated as a Markov decision process (MDP), as many reinforcement learning algorithms for this context utilize dynamic programming techniques.[2]
-The main difference between the classical dynamic programming methods and reinforcement learning algorithms is that the latter do not assume knowledge of an exact mathematical model of the MDP and they target large MDPs where exact methods become infeasible.
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://web2-dsrctgospq.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
+
+</body>
 </html>
